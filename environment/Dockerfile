@@ -21,4 +21,6 @@ RUN python3 -m pip install --upgrade "pyodeint>=0.9.8,<0.10.0" "pygslodeiv2>=0.8
 RUN python3 -m pip install http://hera.physchem.kth.se/~kinetgine/releases/pykinetgine-0.3.2.tar.gz && \
     python3 -m pytest --pyargs pykinetgine && \
     python3 -m pip install http://hera.physchem.kth.se/~aq_radiolysis/releases/aq_radiolysis-0.1.2.tar.gz && \
-    python3 -m pytest --pyargs aq_radiolysis
+    python3 -m pytest --pyargs aq_radiolysis && \
+    python3 -m pip install http://hera.physchem.kth.se/~chemreac-derivations/chemreac-derivations-0.1.x/advediffreac-0.1.1.dev0%2bgit.tar.gz && \
+    python3 -m pytest --pyargs advediffreac
