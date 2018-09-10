@@ -7,3 +7,6 @@ bjodahimg18ff
     - pyodesys-0.12.1
     - block_diag_ilu-0.3.x
     - chemreac-0.7.x
+    - aq_radioylsis-0.1.x
+    - pykinetgine-0.3.x
+    - advediffreac-0.1.x
