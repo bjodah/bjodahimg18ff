@@ -1,4 +1,4 @@
-FROM bjodah/bjodahimg18:v1.7
+FROM bjodah/bjodahimg18:v1.8
 MAINTAINER Björn Dahlgren <bjodah@DELETEMEgmail.com>
 ENV CC=gcc-8 \
     CXX=g++-8 \
@@ -17,7 +17,7 @@ RUN cd /tmp && curl -Ls https://github.com/symengine/symengine.py/archive/v0.4.0
     python3 -m pip install --upgrade "pyneqsys>=0.5.6" "pyodesys>=0.11.19,<0.12.0" "block_diag_ilu>=0.3.9,<0.4.0" "finitediff>=0.6.2" && \
     python3 -m pytest --pyargs pyneqsys && \
     python3 -m pytest --pyargs pyodesys && \
-    python3 -m pip install "chempy>=0.6.17,<0.7.0" && \
+    python3 -m pip install "chempy>=0.6.18,<0.7.0" && \
     python3 -m pytest --pyargs chempy && \
     python3 -m pip install "chemreac>=0.7.15,<0.8.0" && \
     python3 -m pytest --pyargs chemreac && \
